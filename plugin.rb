@@ -3,7 +3,7 @@
 # name: discourse-webp-watermark
 # about: Convert uploaded images to WebP and apply watermarks automatically with high performance.
 # version: 1.1.0
-# authors: Antigravity
+# authors: jikejun.com
 # url: https://github.com/your-username/discourse-webp-watermark
 # required_version: 2.7.0
 
@@ -18,7 +18,7 @@ after_initialize do
   module ::DiscourseWebpWatermark
     # Helper to resolve watermark path (local files, absolute, relative, or URLs)
     def self.watermark_local_path
-      url = SiteSetting.webp_watermark_image_url
+      url = SiteSetting.webp_watermark_image
       return nil if url.blank?
 
       if url.start_with?("/")
@@ -206,8 +206,10 @@ after_initialize do
         @filename = "#{@filename}.webp"
       end
 
-      # Re-extract image info for the newly created WebP file
       extract_image_info!
     end
   end
+
+  ::UploadCreator.prepend(::DiscourseWebpWatermark::UploadCreatorExtension)
 end
+
