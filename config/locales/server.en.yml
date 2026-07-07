@@ -1,0 +1,10 @@
+en:
+  site_settings:
+    webp_conversion_enabled: "Convert uploaded images to WebP format."
+    webp_quality: "Quality level for WebP images (1-100)."
+    webp_watermark_enabled: "Enable watermarking for uploaded images."
+    webp_watermark_image: "Upload a watermark image (PNG format with alpha transparency recommended)."
+    webp_watermark_position: "Position of the watermark on the image."
+    webp_watermark_opacity: "Opacity of the watermark (0-100, default is 50)."
+    webp_watermark_min_width: "Minimum width (pixels) of the image to apply watermark."
+    webp_watermark_min_height: "Minimum height (pixels) of the image to apply watermark."

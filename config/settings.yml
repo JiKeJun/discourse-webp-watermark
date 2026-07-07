@@ -1,0 +1,33 @@
+plugins:
+  webp_conversion_enabled:
+    default: true
+    client: false
+  webp_quality:
+    default: 80
+    client: false
+  webp_watermark_enabled:
+    default: false
+    client: false
+  webp_watermark_image:
+    type: upload
+    default: ""
+    client: false
+  webp_watermark_position:
+    type: enum
+    choices:
+      - "NorthWest"
+      - "NorthEast"
+      - "SouthWest"
+      - "SouthEast"
+      - "Center"
+    default: "SouthEast"
+    client: false
+  webp_watermark_opacity:
+    default: 50
+    client: false
+  webp_watermark_min_width:
+    default: 400
+    client: false
+  webp_watermark_min_height:
+    default: 300
+    client: false

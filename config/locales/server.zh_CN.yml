@@ -1,0 +1,10 @@
+zh_CN:
+  site_settings:
+    webp_conversion_enabled: "将上传的图片转换为 WebP 格式。"
+    webp_quality: "WebP 图片压缩质量 (1-100)。"
+    webp_watermark_enabled: "启用图片上传水印功能。"
+    webp_watermark_image: "上传水印图片（推荐使用具有透明通道的 PNG 格式）。"
+    webp_watermark_position: "水印在图片中的放置位置。"
+    webp_watermark_opacity: "水印不透明度 (0-100，默认 50)。"
+    webp_watermark_min_width: "应用水印的最小图片宽度（像素）。"
+    webp_watermark_min_height: "应用水印的最小图片高度（像素）。"
