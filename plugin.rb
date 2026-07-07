@@ -18,7 +18,10 @@ after_initialize do
   module ::DiscourseWebpWatermark
     # Helper to resolve watermark path (local files, absolute, relative, or URLs)
     def self.watermark_local_path
-      url = SiteSetting.webp_watermark_image
+      val = SiteSetting.webp_watermark_image
+      return nil if val.blank?
+
+      url = val.is_a?(String) ? val : (val.respond_to?(:url) ? val.url : nil)
       return nil if url.blank?
 
       if url.start_with?("/")
