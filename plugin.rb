@@ -4,7 +4,7 @@
 # about: Convert uploaded images to WebP and apply watermarks automatically with high performance.
 # version: 1.1.0
 # authors: jikejun.com
-# url: https://github.com/your-username/discourse-webp-watermark
+# url: https://github.com/JiKeJun/discourse-webp-watermark
 # required_version: 2.7.0
 
 require "net/http"
